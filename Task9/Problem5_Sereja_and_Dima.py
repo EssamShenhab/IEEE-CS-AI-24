@@ -1,4 +1,13 @@
-n = int(input())
+while True:
+    try:
+        n = int(input())
+        if 100 >= n >= 0:
+            break
+        else:
+            print("Please enter a non-negative integer value between 0 and 100.")
+    except ValueError:
+        print("Please enter an integer value")
+
 cards = list(map(int, input().split()))
 
 sereja_points = 0
